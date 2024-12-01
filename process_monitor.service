@@ -1,0 +1,10 @@
+[Unit]
+Description=Monitor the process
+
+[Service]
+ExecStart=/usr/local/bin/process_monitor.sh
+Restart=always
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target 
